@@ -8,25 +8,22 @@ from telethon import events, errors, functions, types
 from userbot import ALIVE_NAME, CUSTOM_PMPERMIT
 from userbot.utils import admin_cmd
 
-PMPERMIT_PIC = os.environ.get("PMPERMIT_PIC", None)
-if PMPERMIT_PIC is None:
-  WARN_PIC = "https://telegra.ph/file/82c595986872349e5ba1a.jpg"
-else:
-  WARN_PIC = PMPERMIT_PIC
 
 PM_WARNS = {}
 PREV_REPLY_MESSAGE = {}
 
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
-CUSTOM_MIDDLE_PMP = str(CUSTOM_PMPERMIT) if CUSTOM_PMPERMIT else "**YOU HAVE TRESPASSED TO MY MASTERS INBOX** \n`THIS IS ILLEGAL AND REGARDED AS A CRIME`"
+CUSTOM_MIDDLE_PMP = str(CUSTOM_PMPERMIT) if CUSTOM_PMPERMIT else "**This Is An AUTOMATED Message**"
 USER_BOT_WARN_ZERO = "`You were spamming my Boss's inbox, henceforth your retarded lame ass has been blocked by my master's userbot.` "
-USER_BOT_NO_WARN = ("`Hello ! This is` **F.R.I.D.A.Y**\n"
+USER_BOT_NO_WARN = ("`Hello ! This is` **J.A.R.V.I.S**\n"
                     "`Private Messaging Security Protocol ⚠️`\n\n"
-                    "**Currently My Boss**\n"
-                    f"{DEFAULTUSER} is Busy ! So Better Don't Spam His Inbox !\n\n"
+                    Currently me f"{DEFAULTUSER} is Busy !Please Dont SPAM My INBOX !\n\n"
+                    "Dont say any HI OR HELLO\n"
+                    "Please Come Straight to the POINT\n"
+                    " ** Read About me Meanwhile i comes online @CHackerzInfo **"
                     f"{CUSTOM_MIDDLE_PMP} \n\n"
-                    "**Now You Are In Trouble So Send** 🍁 `/start` 🍁  **To Start A Valid Conversation!!**")
+                    "")
 
 
 if Var.PRIVATE_GROUP_ID is not None:
